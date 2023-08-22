@@ -5,20 +5,37 @@ This repository contains programs in the C++ programming language related to Obj
 
 ---
 
-<h1>About C++ Programming</h1>
+# About C++ Programming
 --> C++ is a cross-platform language that can be used to create high-performance applications.<br><br>
 --> C++ was developed by Bjarne Stroustrup, as an extension to the C language.<br><br>
 --> C++ gives programmers a high level of control over system resources and memory.<br><br>
 --> C++ is an object-oriented programming language which gives a clear structure to programs and allows code to be reused, lowering development costs.<br><br>
 
 ---
+# Mode of Execution used <img src="https://logodix.com/logo/1709678.png" height=30px width=30px>
+<h2>GCC Compiler</h2>
+--> GCC stands for GNU C/C++ Compiler.<br><br>
+--> To begin with GCC, visit the official website &nbsp;<a href="https://gcc.gnu.org/"><img src="https://logodix.com/logo/1709678.png" height=30px width=30px></a><br><br>
+--> Download GCC according to the platform being used like Linux, MacOs or Windows.<br><br>
+--> Follow the setup wizard.<br><br>
+--> Write c++ code in any text editor or IDE and save it with .cpp extention.<br><br>
+--> Then just open the console and run this command -<br><br>
 
-<h1>C++ Programming Features</h1>
+```
+g++ filename.cpp -o Output
+```
+--> Filename is the name of the C++ script file and Output is the name of the output file.<br><br>
+--> After this command is executed, if the code is successfully compiled output file will be saved in the same location as the code file.<br><br>
+--> Once this Output file is executed in command prompt, the output will be displayed.
+
+---
+
+# C++ Programming Features
 
 <img src="https://github.com/madhurimarawat/Object-oriented-programming-with-c-plus-plus/assets/105432776/3062241f-9f30-4a81-a0bc-9627eaa39f5c" height=400 width=650>
 
 ---
-<h1> Object Oriented Programming</h1>
+# Object Oriented Programming
 
 <img src="https://github.com/madhurimarawat/Object-oriented-programming-with-c-plus-plus/assets/105432776/a5982638-92e3-4920-9b67-c0b60ff2ffd7" height=430 width=650>
 <br>
