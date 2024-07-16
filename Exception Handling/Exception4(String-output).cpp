@@ -1,23 +1,26 @@
 #include <iostream>
-#include<conio.h>
+#include <conio.h>
 using namespace std;
 int main()
 {
-    int a=10, b=0, d;
-    // try block activates exception handling
-    try 
+  int a = 10, b = 0, d;
+  // try block activates exception handling
+  try
+  {
+    if (b == 0)
     {
-        if(b == 0)
-        {
-            // throw custom exception
-string c = "Division by zero not possible";
-            throw c;}
-          else{  d = a/b;
-        }
+      // throw custom exception
+      string c = "Division by zero not possible";
+      throw c;
     }
-    catch(string ex) // catches exception
+    else
     {
-        cout<<ex;
+      d = a / b;
     }
-    return 0;
+  }
+  catch (string ex) // catches exception
+  {
+    cout << ex;
+  }
+  return 0;
 }
