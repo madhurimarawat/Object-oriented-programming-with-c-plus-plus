@@ -1,7 +1,7 @@
 # Object-oriented-programming-with-c-plus-plus
 This repository contains programs in the C++ programming language related to Object Oriented programming.<br><br>
 
-<img src = "https://github.com/madhurimarawat/Object-oriented-programming-with-c-plus-plus/assets/105432776/1284d625-f4b2-403d-ae65-220bc47ee950" height=400px width="100%">
+<img src = "https://github.com/madhurimarawat/Object-oriented-programming-with-c-plus-plus/assets/105432776/1284d625-f4b2-403d-ae65-220bc47ee950" height=400px width=650>
 
 ---
 
