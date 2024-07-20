@@ -1,8 +1,20 @@
+/**
+ * The given C++ program takes input for two matrices, multiplies them, and outputs the result matrix.
+ *
+ * @return The main function in the C++ program is returning an integer value of 0.
+ */
+
+// WAP in C++ to multiply matrix
+
+// Including Header Files
 #include <iostream>
+
+// Using namespace
 using namespace std;
+
+// Main Function
 int main()
 {
-//WAP in C++ to multiply matrix
   int a[10][10], b[10][10], mul[10][10], r, c, i, j, k, p = 1, q = 1;
   cout << "Enter the number of row:" << endl;
   cin >> r;
