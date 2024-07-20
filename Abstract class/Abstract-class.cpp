@@ -1,5 +1,17 @@
+/**
+ * The code defines an abstract base class "polygon" with a pure virtual function "sides" and two
+ * derived classes "triangle" and "square" that implement the sides function to print the number of
+ * sides for each shape.
+ *
+ * @return The program returns 0, which indicates successful execution.
+ */
+
+// Including Header Files
 #include <iostream>
+
+// Using namespace
 using namespace std;
+
 class polygon
 {
 public:
@@ -9,7 +21,7 @@ public:
     cout << "Abstract base class\n";
   }
 };
-class triangle: public polygon
+class triangle : public polygon
 {
 public:
   void sides()
@@ -18,7 +30,7 @@ public:
     cout << "Implementing in derived class.\n";
   }
 };
-class square: public polygon
+class square : public polygon
 {
 public:
   void sides()
@@ -27,6 +39,8 @@ public:
     cout << "Implementing in derived class.\n";
   }
 };
+
+// Main Function
 int main()
 {
   triangle t;
@@ -36,17 +50,3 @@ int main()
   s.sides();
   return 0;
 }
-/*polygon p;
- Abstract-class.cpp:20:9: error: cannot declare variable 'p' to be of abstract type 'polygon'
- polygon p;
-         ^
-Abstract-class.cpp:3:7: note:   because the following virtual functions are pure within 'polygon':
- class polygon{
-       ^~~~~~~
-Abstract-class.cpp:5:14: note:  virtual void polygon::sides()
- virtual void sides()=0;
-              ^~~~~*/
-/*Triangle has 3 sides.
-Implementing in derived class.
-Square has 4 sides.
-Implementing in derived class.*/
