@@ -1,19 +1,43 @@
+// Including Header File
 #include <iostream>
-#include <stdio.h>
+
+// Using Namespace std
 using namespace std;
-//wap for heirchical inheritance
+
+// wap for hierarchical inheritance
 class bankAcc
 {
 public:
   int accno;
   string name;
   float am;
+
+  /**
+   * @brief Initializes the bank account with given account number, name, and initial amount.
+   *
+   * This function sets the account number, name, and initial amount for the bank account.
+   *
+   * @param A The account number to be set.
+   * @param n The name of the account holder to be set.
+   * @param R The initial amount to be set.
+   *
+   * @return void This function does not return any value.
+   */
   void init(int A, string n, float R)
   {
     accno = A;
     name = n;
     am = R;
   }
+
+  /**
+   * @brief Processes a deposit operation on the bank account.
+   *
+   * This function prompts the user to enter a deposit amount, adds it to the current balance,
+   * and then displays the updated balance.
+   *
+   * @return void This function does not return any value.
+   */
   void deposit()
   {
     float da;
@@ -22,6 +46,18 @@ public:
     am = am + da;
     cout << "Amount in your account after deposit:" << am << endl;
   }
+
+  /**
+   * @brief Processes a withdrawal operation on the bank account.
+   *
+   * This function prompts the user to enter a withdrawal amount, checks if the withdrawal amount
+   * exceeds the minimum balance of 2500, and then either withdraws the amount from the current balance
+   * or displays an error message.
+   *
+   * @param wa The withdrawal amount to be processed.
+   *
+   * @return void This function does not return any value.
+   */
   void withdraw()
   {
     float wa;
@@ -40,9 +76,19 @@ public:
     }
   }
 };
-class current: public bankAcc
+
+// class current : public bankAcc
+class current : public bankAcc
 {
 public:
+  /**
+   * @brief Displays a welcome message and prompts the user to choose an operation for the current account.
+   *
+   * This function displays a welcome message to the user and asks them to choose between depositing or withdrawing money.
+   * It then calls the appropriate bankAcc member functions based on the user's choice.
+   *
+   * @return void This function does not return any value.
+   */
   void greet()
   {
     int ch;
@@ -59,9 +105,19 @@ public:
     }
   }
 };
+
+// class saving : public bankAcc
 class saving : public bankAcc
 {
 public:
+  /**
+   * @brief Displays a welcome message and prompts the user to choose an operation for the saving account.
+   *
+   * This function displays a welcome message to the user and asks them to choose between depositing or withdrawing money.
+   * It then calls the appropriate bankAcc member functions based on the user's choice.
+   *
+   * @return void This function does not return any value.
+   */
   void greet()
   {
     int c;
@@ -78,6 +134,17 @@ public:
     }
   }
 };
+
+/**
+ * @brief The main function of the program.
+ *
+ * This function serves as the entry point for the bank account management program.
+ * It prompts the user to enter their account number, name, and initial amount,
+ * creates instances of the bankAcc, current, and saving classes based on user input,
+ * and calls the appropriate member functions to perform deposit and withdrawal operations.
+ *
+ * @return int Returns 0 to indicate successful program execution.
+ */
 int main()
 {
   int accno, c;
@@ -108,4 +175,3 @@ int main()
   }
   return 0;
 }
-
